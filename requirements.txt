@@ -1,0 +1,26 @@
+# Python 3.10+ recommended
+# ML engine
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+joblib>=1.3
+
+# Graph-based fault propagation and recovery simulation
+networkx>=3.2
+
+# API layer (ML/graph engine <-> Unity)
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+
+# Evaluation, plots and paper figures
+matplotlib>=3.8
+seaborn>=0.13
+
+# Optional: explainability for Random Forest
+shap>=0.44
+
+# Testing / API client
+pytest>=8.0
+httpx>=0.27

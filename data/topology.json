@@ -1,0 +1,208 @@
+{
+  "units": "metres",
+  "rack": {
+    "width": 0.6,
+    "depth": 1.07,
+    "height": 2.0
+  },
+  "nodes": [
+    {
+      "id": "wan",
+      "type": "external",
+      "rack": null,
+      "slot": null,
+      "role": "gateway",
+      "pos": {
+        "x": -1.5,
+        "y": 1.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "sw-core",
+      "type": "switch",
+      "rack": "rack-1",
+      "slot": 38,
+      "role": "core",
+      "pos": {
+        "x": 0.0,
+        "y": 1.7447,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "sw-tor-1",
+      "type": "switch",
+      "rack": "rack-1",
+      "slot": 40,
+      "role": "tor",
+      "pos": {
+        "x": 0.0,
+        "y": 1.8336,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "sw-tor-2",
+      "type": "switch",
+      "rack": "rack-2",
+      "slot": 40,
+      "role": "tor",
+      "pos": {
+        "x": 1.7999999999999998,
+        "y": 1.8336,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-1-1",
+      "type": "server",
+      "rack": "rack-1",
+      "slot": 10,
+      "role": "",
+      "pos": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-1-2",
+      "type": "server",
+      "rack": "rack-1",
+      "slot": 12,
+      "role": "",
+      "pos": {
+        "x": 0.0,
+        "y": 0.589,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-1-3",
+      "type": "server",
+      "rack": "rack-1",
+      "slot": 14,
+      "role": "",
+      "pos": {
+        "x": 0.0,
+        "y": 0.6779,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-2-1",
+      "type": "server",
+      "rack": "rack-2",
+      "slot": 10,
+      "role": "",
+      "pos": {
+        "x": 1.7999999999999998,
+        "y": 0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-2-2",
+      "type": "server",
+      "rack": "rack-2",
+      "slot": 12,
+      "role": "",
+      "pos": {
+        "x": 1.7999999999999998,
+        "y": 0.589,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "srv-2-3",
+      "type": "server",
+      "rack": "rack-2",
+      "slot": 14,
+      "role": "",
+      "pos": {
+        "x": 1.7999999999999998,
+        "y": 0.6779,
+        "z": 0.0
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "lnk-wan-core",
+      "a": "wan",
+      "b": "sw-core",
+      "monitored": false
+    },
+    {
+      "id": "lnk-core-tor1",
+      "a": "sw-core",
+      "b": "sw-tor-1",
+      "monitored": true
+    },
+    {
+      "id": "lnk-core-tor2",
+      "a": "sw-core",
+      "b": "sw-tor-2",
+      "monitored": true
+    },
+    {
+      "id": "lnk-tor1-tor2",
+      "a": "sw-tor-1",
+      "b": "sw-tor-2",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-1-1",
+      "a": "sw-tor-1",
+      "b": "srv-1-1",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-1-2",
+      "a": "sw-tor-1",
+      "b": "srv-1-2",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-1-3",
+      "a": "sw-tor-1",
+      "b": "srv-1-3",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-2-1",
+      "a": "sw-tor-2",
+      "b": "srv-2-1",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-2-2",
+      "a": "sw-tor-2",
+      "b": "srv-2-2",
+      "monitored": true
+    },
+    {
+      "id": "lnk-srv-2-3",
+      "a": "sw-tor-2",
+      "b": "srv-2-3",
+      "monitored": true
+    }
+  ],
+  "services": {
+    "svc-web": [
+      "srv-1-1",
+      "srv-2-1"
+    ],
+    "svc-db": [
+      "srv-1-2"
+    ],
+    "svc-cache": [
+      "srv-2-2"
+    ],
+    "svc-batch": [
+      "srv-1-3",
+      "srv-2-3"
+    ]
+  }
+}

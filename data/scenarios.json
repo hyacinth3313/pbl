@@ -1,0 +1,2845 @@
+[
+ {
+  "scenario_id": 0,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 1,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 2,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 3,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-2",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 4,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 5,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 6,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 7,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 8,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 9,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 10,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 11,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 12,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 13,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 14,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 15,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 21,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 16,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-3",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 17,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 18,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 19,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 20,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 21,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 22,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 23,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 21,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 24,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 25,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 26,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 27,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 28,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 29,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 30,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 31,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 32,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 33,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 34,
+  "fault_type": "overheat",
+  "source_id": "srv-1-2",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 35,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 36,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 37,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 38,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 39,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 40,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 41,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 42,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 43,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 44,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 45,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 46,
+  "fault_type": "overheat",
+  "source_id": "srv-2-1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 47,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 48,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-3",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 49,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 50,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 51,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 52,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 53,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 54,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 55,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 56,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 57,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 58,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 59,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 60,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 61,
+  "fault_type": "overheat",
+  "source_id": "srv-2-2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 62,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 63,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 64,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 65,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 66,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 67,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 68,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 69,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 70,
+  "fault_type": "overheat",
+  "source_id": "srv-2-2",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 71,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 72,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 73,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 74,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 75,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 76,
+  "fault_type": "overheat",
+  "source_id": "srv-1-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 77,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-3",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 78,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-3",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 79,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 80,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-3",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 81,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 82,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 83,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 84,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 85,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 86,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 87,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 88,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 89,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 90,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 91,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 92,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 93,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 94,
+  "fault_type": "overheat",
+  "source_id": "srv-1-2",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 95,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-1",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 96,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 97,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 98,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 99,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 100,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 101,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 102,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 103,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 104,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-2",
+  "onset_tick": 21,
+  "split": "test",
+  "impact": {
+   "srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 105,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 106,
+  "fault_type": "overheat",
+  "source_id": "srv-1-2",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 107,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 108,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 109,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 110,
+  "fault_type": "overheat",
+  "source_id": "srv-2-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 111,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 112,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 113,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 114,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 115,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 116,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-3",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 117,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 118,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 119,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 120,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-3",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 121,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 122,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 123,
+  "fault_type": "overheat",
+  "source_id": "srv-2-2",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 124,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 125,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 126,
+  "fault_type": "overheat",
+  "source_id": "sw-core",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 127,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 128,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 129,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 130,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 131,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 132,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 133,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 134,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 135,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 136,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 137,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 138,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 139,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 140,
+  "fault_type": "overheat",
+  "source_id": "srv-1-1",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 141,
+  "fault_type": "overheat",
+  "source_id": "srv-1-1",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 142,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 143,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 144,
+  "fault_type": "overheat",
+  "source_id": "srv-1-1",
+  "onset_tick": 20,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 145,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 146,
+  "fault_type": "overheat",
+  "source_id": "srv-2-2",
+  "onset_tick": 19,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 147,
+  "fault_type": "overheat",
+  "source_id": "srv-2-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 148,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 149,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 150,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 151,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 152,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 153,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 154,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 155,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 156,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 21,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 157,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 158,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 21,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 159,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 160,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 161,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 162,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 163,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 164,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "sw-tor-2": "degraded",
+   "srv-2-1": "degraded",
+   "srv-2-2": "degraded",
+   "srv-2-3": "degraded",
+   "lnk-core-tor1": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-2-1": "degraded",
+   "lnk-srv-2-2": "degraded",
+   "lnk-srv-2-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 165,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 166,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 167,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 168,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 169,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 16,
+  "split": "test",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 170,
+  "fault_type": "overheat",
+  "source_id": "srv-2-1",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 171,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 172,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 173,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 174,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 175,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 176,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 177,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 15,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 178,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-2",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 179,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-3",
+  "onset_tick": 17,
+  "split": "test",
+  "impact": {
+   "srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 180,
+  "fault_type": "switch_failure",
+  "source_id": "sw-tor-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "svc-web": "degraded",
+   "svc-db": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 181,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 21,
+  "split": "test",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 182,
+  "fault_type": "overheat",
+  "source_id": "srv-2-1",
+  "onset_tick": 20,
+  "split": "test",
+  "impact": {
+   "lnk-srv-2-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 183,
+  "fault_type": "overheat",
+  "source_id": "srv-2-3",
+  "onset_tick": 19,
+  "split": "train",
+  "impact": {
+   "lnk-srv-2-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 184,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-1-1",
+  "onset_tick": 17,
+  "split": "train",
+  "impact": {
+   "srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 185,
+  "fault_type": "link_failure",
+  "source_id": "lnk-tor1-tor2",
+  "onset_tick": 20,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 186,
+  "fault_type": "overheat",
+  "source_id": "srv-1-3",
+  "onset_tick": 18,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-3": "down",
+   "svc-batch": "degraded"
+  }
+ },
+ {
+  "scenario_id": 187,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "test",
+  "impact": {}
+ },
+ {
+  "scenario_id": 188,
+  "fault_type": "link_failure",
+  "source_id": "lnk-srv-2-2",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "srv-2-2": "down",
+   "svc-cache": "down"
+  }
+ },
+ {
+  "scenario_id": 189,
+  "fault_type": "overheat",
+  "source_id": "srv-1-2",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "lnk-srv-1-2": "down",
+   "svc-db": "down"
+  }
+ },
+ {
+  "scenario_id": 190,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 191,
+  "fault_type": "overheat",
+  "source_id": "srv-1-1",
+  "onset_tick": 16,
+  "split": "train",
+  "impact": {
+   "lnk-srv-1-1": "down",
+   "svc-web": "degraded"
+  }
+ },
+ {
+  "scenario_id": 192,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 193,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 194,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 195,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 196,
+  "fault_type": "link_failure",
+  "source_id": "lnk-core-tor1",
+  "onset_tick": 15,
+  "split": "test",
+  "impact": {
+   "sw-tor-1": "degraded",
+   "srv-1-1": "degraded",
+   "srv-1-2": "degraded",
+   "srv-1-3": "degraded",
+   "lnk-core-tor2": "degraded",
+   "lnk-tor1-tor2": "degraded",
+   "lnk-srv-1-1": "degraded",
+   "lnk-srv-1-2": "degraded",
+   "lnk-srv-1-3": "degraded"
+  }
+ },
+ {
+  "scenario_id": 197,
+  "fault_type": "switch_failure",
+  "source_id": "sw-core",
+  "onset_tick": 18,
+  "split": "train",
+  "impact": {
+   "sw-tor-1": "down",
+   "sw-tor-2": "down",
+   "srv-1-1": "down",
+   "srv-1-2": "down",
+   "srv-1-3": "down",
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor1": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-1-1": "down",
+   "lnk-srv-1-2": "down",
+   "lnk-srv-1-3": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "down",
+   "svc-db": "down",
+   "svc-cache": "down",
+   "svc-batch": "down"
+  }
+ },
+ {
+  "scenario_id": 198,
+  "fault_type": "none",
+  "source_id": null,
+  "onset_tick": -1,
+  "split": "train",
+  "impact": {}
+ },
+ {
+  "scenario_id": 199,
+  "fault_type": "overheat",
+  "source_id": "sw-tor-2",
+  "onset_tick": 20,
+  "split": "train",
+  "impact": {
+   "srv-2-1": "down",
+   "srv-2-2": "down",
+   "srv-2-3": "down",
+   "lnk-core-tor2": "down",
+   "lnk-tor1-tor2": "down",
+   "lnk-srv-2-1": "down",
+   "lnk-srv-2-2": "down",
+   "lnk-srv-2-3": "down",
+   "svc-web": "degraded",
+   "svc-cache": "down",
+   "svc-batch": "degraded"
+  }
+ }
+]
